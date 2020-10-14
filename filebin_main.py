@@ -33,7 +33,7 @@ def success():
         # non-stripe users. Expiry time of link can be modified using minutes argument of timedelta
         resp1 = stripe.FileLink.create(file=resp['id'],expires_at=int((datetime.now()+timedelta(minutes=5)).timestamp()))
         # returning the response 
-        return {'File_sharable_url':resp1['url']}  
+        return {'File_sharable_url':resp1['url'],'file_sharable_link_expiry_time':'5 mins'}  
 if __name__ == '__main__':
     # Running the application
     app.run(debug = True)  
