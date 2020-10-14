@@ -10,8 +10,8 @@ Steps to get started
 
 
 # Assumptions
-Instead of one time clickablity feature expiration time of sharable link is used whose setting can be changed from the main script.
-file type consideration are performed only for images type files of type JPG/PNG format but can be extended to other file formats as well by changing purpose of stripe file create 
+Instead of one time clickablity feature expiration time of sharable link is used whose setting can be changed from the main script.\
+File type consideration are performed only for images type files of type JPG/PNG format but can be extended to other file formats as well by changing purpose of stripe file create\ 
 function inside the python script as per below needs.
 # purpose attribute values                      file format supported                     Max file size
 purpose  = dispute_evidence                    PDF JPEG PNG                                8MB
