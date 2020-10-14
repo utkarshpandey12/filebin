@@ -5,7 +5,7 @@ Steps to get started
 1 git clone\
 2 cd filebin\
 3 pip install -r requirements.txt ( make sure pip is installed )\
-4 python filebin_main.py\
+4 python filebin_main.py ( make sure python3+ is installed )\
 5 Visit http://127.0.0.1:5000/ and see application running\
 
 
