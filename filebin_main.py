@@ -25,10 +25,10 @@ def success():
         # Opening the file saved 
         with open(f.filename, "rb") as fp:
             # Create file_id from stripe python client 
-            resp = stripe.File.create(purpose="dispute_evidence",file=fp)
+            resp = stripe.File.create(purpose="tax_document_user_upload",file=fp)
         # deleting the current file from the directory to avoid name collisions
-        #if os.path.exists(f.filename):
-        os.remove(f.filename)
+        if os.path.exists(f.filename):
+            os.remove(f.filename)
         # getting the sharable file url from the file_id to share it with
         # non-stripe users. Expiry time of link can be modified using minutes argument of timedelta
         resp1 = stripe.FileLink.create(file=resp['id'],expires_at=int((datetime.now()+timedelta(minutes=5)).timestamp()))
