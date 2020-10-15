@@ -11,7 +11,7 @@ Steps to get started
 
 # Assumptions
 Instead of one time clickablity feature expiration time of sharable link is used whose setting can be changed from the main script. After 5 mins the link stops working.\
-File type taken into consideration are PDF CSV JPEG PNG XLSX DOCX. 
+File type taken into consideration are .PDF .CSV .JPEG .PNG .XLSX .DOCX .TXT. 
 A simple app to upload the file and share link with link expiration time set to 5 minutes.\
 According to stripe we can configure the value of purpose argument while creating stripe\
 files which controls the supported file types and size of files like parameters. 
